@@ -1,0 +1,64 @@
+.dark-mode .rbc-header {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .rbc-day-slot {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .rbc-day-bg {
+  background-color: #2d2d2d;
+  border: 1px solid #404040;
+}
+
+.dark-mode .rbc-month-row {
+  border: 1px solid #404040;
+}
+
+.dark-mode .rbc-month-view {
+  border: 1px solid transparent;
+}
+
+.dark-mode .rbc-timeslot-group {
+  border-bottom: 1px solid #404040;
+}
+
+.dark-mode .rbc-day-slot .rbc-events-container {
+  border: 1px solid #404040;
+}
+
+.dark-mode .rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #404040;
+}
+
+.dark-mode .rbc-time-header-content {
+  border: 1px solid #404040;
+}
+
+.dark-mode .rbc-time-view {
+  border: 1px solid #404040;
+}
+
+.dark-mode .rbc-time-content {
+  border-top: 2px solid #404040;
+}
+
+.dark-mode .rbc-off-range-bg {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .rbc-header {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .rbc-button-link {
+  margin-bottom: 15px;
+}
+
+.dark-mode .rbc-today {
+  background-color: rgb(60, 60, 60, 1);
+}
+
+.gantt-task .gantt-task-resizer {
+  display: none !important;
+}

@@ -1,0 +1,55 @@
+.rbc-toolbar {
+  margin-top: 20px;
+  background-color: rosybrown;
+}
+
+.rbc-toolbar button {
+  border-radius: 10px;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  font-weight: bold;
+  font-size: 20.73px;
+}
+
+.rbc-header {
+  text-align: center;
+  padding: 10px;
+  border: none;
+}
+
+.rbc-header + .rbc-header {
+  border: none;
+}
+
+.rbc-month-view .rbc-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rbc-month-view .rbc-header + .rbc-header {
+  border-left: none;
+}
+
+.rbc-month-view .rbc-off-range-bg {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #5088ff,
+    #5088ff 0.2px,
+    transparent 1px,
+    transparent 10px
+  );
+  background-color: transparent;
+}
+
+.rbc-slot-selecting {
+  cursor: pointer;
+}
+
+.rbc-show-more {
+  color: black;
+  opacity: 0.4;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+appId: com.intelligent-management-tracker.app
+productName: intelligent-management-tracker
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!**/.vs/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+asarUnpack:
+  - resources/**
+  - node_modules/screenshot-desktop/lib/win32
+  - node_modules/screenshot-desktop/lib/win32/screenCapture_1.3.2.bat
+win:
+  executableName: Intelligent-Management-Tracker
+  extraResources:
+    - node_modules/screenshot-desktop/lib/win32/screenCapture_1.3.2.bat
+    - node_modules/screenshot-desktop/lib/win32/app.manifest
+  icon: build/icon.ico
+
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always
+  installerIcon: build/icon.ico # Add this to set the installer icon
+  uninstallerIcon: build/icon.ico # Set uninstaller icon
+  installerHeaderIcon: build/icon.ico # Set header icon for the installer
+mac:
+  entitlementsInherit: build/entitlements.mac.plist
+  extendInfo:
+    - NSCameraUsageDescription: Application requests access to the device's camera.
+    - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
+    - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
+    - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
+  notarize: false
+dmg:
+  artifactName: ${name}-${version}.${ext}
+linux:
+  target:
+    - AppImage
+    - snap
+    - deb
+  maintainer: electronjs.org
+  category: Utility
+appImage:
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
+publish:
+  provider: generic
+  url: https://example.com/auto-updates
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/

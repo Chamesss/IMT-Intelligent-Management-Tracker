@@ -1,0 +1,4 @@
+{
+  "enableCMake": true,
+  "sourceDirectory": "node_modules\\nan"
+}
